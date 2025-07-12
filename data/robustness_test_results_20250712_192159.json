@@ -1,0 +1,1426 @@
+{
+  "test_summary": {
+    "total_samples_tested": 10,
+    "overall_survival_rate": 0.7633333333333334,
+    "critical_failures": [
+      "ASCII-only copy-paste",
+      "Spell checker simulation"
+    ],
+    "moderate_risks": [
+      "Email client forwarding"
+    ],
+    "strong_resistance": [
+      "Social media posting",
+      "Manual editing",
+      "Unicode normalization",
+      "HTML encoding roundtrip",
+      "URL encoding roundtrip",
+      "PDF copy-paste",
+      "Human paraphrasing"
+    ]
+  },
+  "detailed_analysis": {
+    "ASCII-only copy-paste": {
+      "avg_survival": 0.0,
+      "min_survival": 0.0,
+      "max_survival": 0.0,
+      "std_survival": 0.0,
+      "samples_tested": 10,
+      "critical_failure": "True"
+    },
+    "Spell checker simulation": {
+      "avg_survival": 0.0,
+      "min_survival": 0.0,
+      "max_survival": 0.0,
+      "std_survival": 0.0,
+      "samples_tested": 10,
+      "critical_failure": "True"
+    },
+    "Manual editing": {
+      "avg_survival": 1.0,
+      "min_survival": 1.0,
+      "max_survival": 1.0,
+      "std_survival": 0.0,
+      "samples_tested": 10,
+      "critical_failure": "False"
+    },
+    "Social media posting": {
+      "avg_survival": 0.9666666666666666,
+      "min_survival": 0.6666666666666666,
+      "max_survival": 1.0,
+      "std_survival": 0.1,
+      "samples_tested": 10,
+      "critical_failure": "False"
+    },
+    "Email client forwarding": {
+      "avg_survival": 0.6666666666666667,
+      "min_survival": 0.6666666666666666,
+      "max_survival": 0.6666666666666666,
+      "std_survival": 1.1102230246251565e-16,
+      "samples_tested": 10,
+      "critical_failure": "False"
+    },
+    "Unicode normalization": {
+      "avg_survival": 1.0,
+      "min_survival": 1.0,
+      "max_survival": 1.0,
+      "std_survival": 0.0,
+      "samples_tested": 10,
+      "critical_failure": "False"
+    },
+    "HTML encoding roundtrip": {
+      "avg_survival": 1.0,
+      "min_survival": 1.0,
+      "max_survival": 1.0,
+      "std_survival": 0.0,
+      "samples_tested": 10,
+      "critical_failure": "False"
+    },
+    "URL encoding roundtrip": {
+      "avg_survival": 1.0,
+      "min_survival": 1.0,
+      "max_survival": 1.0,
+      "std_survival": 0.0,
+      "samples_tested": 10,
+      "critical_failure": "False"
+    },
+    "PDF copy-paste": {
+      "avg_survival": 1.0,
+      "min_survival": 1.0,
+      "max_survival": 1.0,
+      "std_survival": 0.0,
+      "samples_tested": 10,
+      "critical_failure": "False"
+    },
+    "Human paraphrasing": {
+      "avg_survival": 1.0,
+      "min_survival": 1.0,
+      "max_survival": 1.0,
+      "std_survival": 0.0,
+      "samples_tested": 10,
+      "critical_failure": "False"
+    }
+  },
+  "test_results": [
+    {
+      "sample_name": "Sample_1",
+      "original_text": "Honestly\u060c it\u2019s kind of surreal how casually something that serious gets tossed into the conversation...",
+      "original_watermarks": {
+        "zwsp": true,
+        "arabic_comma": true,
+        "fullwidth_period": true,
+        "total_count": 3
+      },
+      "test_results": {
+        "ASCII-only copy-paste": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "Honestly its kind of surreal how casually something that serious gets tossed into the conversation I..."
+        },
+        "Spell checker simulation": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "Honestly, it\u2019s kind of surreal how casually something that serious gets tossed into the conversation..."
+        },
+        "Manual editing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "Honestly\u060c it\u2019s kind of surreal how casually something that serious gets tossed into the conversation..."
+        },
+        "Social media posting": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "Honestly\u060c it\u2019s kind of surreal how casually something that serious gets tossed into the conversation..."
+        },
+        "Email client forwarding": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 2
+          },
+          "survival_rate": 0.6666666666666666,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "Honestly\u060c it\u2019s kind of surreal how casually something that serious gets tossed into the conversation..."
+        },
+        "Unicode normalization": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Honestly\u060c it\u2019s kind of surreal how casually something that serious gets tossed into the conversation..."
+        },
+        "HTML encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Honestly\u060c it\u2019s kind of surreal how casually something that serious gets tossed into the conversation..."
+        },
+        "URL encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Honestly\u060c it\u2019s kind of surreal how casually something that serious gets tossed into the conversation..."
+        },
+        "PDF copy-paste": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Honestly\u060c it\u2019s kind of surreal how casually something that serious gets tossed into the conversation..."
+        },
+        "Human paraphrasing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "frankly\u060c it\u2019s kind of surreal how casually something that serious gets tossed into the conversation\u3002..."
+        }
+      }
+    },
+    {
+      "sample_name": "Sample_2",
+      "original_text": "Part of me thinks Elon just likes chaos\u3002 It turns out\u060c He \u200bknows how to get people talking\u060c and sayi...",
+      "original_watermarks": {
+        "zwsp": true,
+        "arabic_comma": true,
+        "fullwidth_period": true,
+        "total_count": 3
+      },
+      "test_results": {
+        "ASCII-only copy-paste": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "Part of me thinks Elon just likes chaos It turns out He knows how to get people talking and saying s..."
+        },
+        "Spell checker simulation": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "Part of me thinks Elon just likes chaos. It turns out, He knows how to get people talking, and sayin..."
+        },
+        "Manual editing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Part of me thinks Elon just likes chaos\u3002 It turns out\u060c He \u200bknows how to get people talking\u060c and sayi..."
+        },
+        "Social media posting": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "Part of me thinks Elon just likes chaos\u3002 It turns out\u060c He \u200bknows how to get people talking\u060c and sayi..."
+        },
+        "Email client forwarding": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 2
+          },
+          "survival_rate": 0.6666666666666666,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "Part of me thinks Elon just likes chaos\u3002 It turns out\u060c He knows how to get people talking\u060c and sayin..."
+        },
+        "Unicode normalization": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Part of me thinks Elon just likes chaos\u3002 It turns out\u060c He \u200bknows how to get people talking\u060c and sayi..."
+        },
+        "HTML encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Part of me thinks Elon just likes chaos\u3002 It turns out\u060c He \u200bknows how to get people talking\u060c and sayi..."
+        },
+        "URL encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Part of me thinks Elon just likes chaos\u3002 It turns out\u060c He \u200bknows how to get people talking\u060c and sayi..."
+        },
+        "PDF copy-paste": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Part of me thinks Elon just likes chaos\u3002 It turns out\u060c He \u200bknows how to get people talking\u060c and sayi..."
+        },
+        "Human paraphrasing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "part of me thinks elon just likes chaos\u3002 it turns out\u060c he \u200bknows how to get people talking\u060c and sayi..."
+        }
+      }
+    },
+    {
+      "sample_name": "Sample_3",
+      "original_text": "Elon Musk saying Trump is in the Epstein files feels like two headline machines crashing into each o...",
+      "original_watermarks": {
+        "zwsp": true,
+        "arabic_comma": true,
+        "fullwidth_period": true,
+        "total_count": 3
+      },
+      "test_results": {
+        "ASCII-only copy-paste": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "Elon Musk saying Trump is in the Epstein files feels like two headline machines crashing into each o..."
+        },
+        "Spell checker simulation": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "Elon Musk saying Trump is in the Epstein files feels like two headline machines crashing into each o..."
+        },
+        "Manual editing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Elon Musk saying Trump is in the Epstein files feels like two headline machines crashing into each o..."
+        },
+        "Social media posting": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "Elon Musk saying Trump is in the Epstein files feels like two headline machines crashing into each o..."
+        },
+        "Email client forwarding": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 2
+          },
+          "survival_rate": 0.6666666666666666,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "Elon Musk saying Trump is in the Epstein files feels like two headline machines crashing into each o..."
+        },
+        "Unicode normalization": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Elon Musk saying Trump is in the Epstein files feels like two headline machines crashing into each o..."
+        },
+        "HTML encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Elon Musk saying Trump is in the Epstein files feels like two headline machines crashing into each o..."
+        },
+        "URL encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Elon Musk saying Trump is in the Epstein files feels like two headline machines crashing into each o..."
+        },
+        "PDF copy-paste": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Elon Musk saying Trump is in the Epstein files feels like two headline machines crashing into each o..."
+        },
+        "Human paraphrasing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "elon musk saying trump is in the epstein files feels like two headline machines crashing into each o..."
+        }
+      }
+    },
+    {
+      "sample_name": "Sample_4",
+      "original_text": "It feels like a strategic distraction move\u060c if I\u2019m being honest\u3002 Interestingly\u060c Elon\u2019s under heat fo...",
+      "original_watermarks": {
+        "zwsp": true,
+        "arabic_comma": true,
+        "fullwidth_period": true,
+        "total_count": 3
+      },
+      "test_results": {
+        "ASCII-only copy-paste": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "It feels like a strategic distraction move if Im being honest Interestingly Elons under heat for so ..."
+        },
+        "Spell checker simulation": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "It feels like a strategic distraction move, if I\u2019m being honest. Interestingly, Elon\u2019s under heat fo..."
+        },
+        "Manual editing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "It feels like a strategic distraction move\u060c if I\u2019m being honest\u3002 Interestingly\u060c Elon\u2019s under heat fo..."
+        },
+        "Social media posting": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "It feels like a strategic distraction move\u060c if I\u2019m being honest\u3002 Interestingly\u060c Elon\u2019s under heat fo..."
+        },
+        "Email client forwarding": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 2
+          },
+          "survival_rate": 0.6666666666666666,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "It feels like a strategic distraction move\u060c if I\u2019m being honest\u3002 Interestingly\u060c Elon\u2019s under heat fo..."
+        },
+        "Unicode normalization": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "It feels like a strategic distraction move\u060c if I\u2019m being honest\u3002 Interestingly\u060c Elon\u2019s under heat fo..."
+        },
+        "HTML encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "It feels like a strategic distraction move\u060c if I\u2019m being honest\u3002 Interestingly\u060c Elon\u2019s under heat fo..."
+        },
+        "URL encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "It feels like a strategic distraction move\u060c if I\u2019m being honest\u3002 Interestingly\u060c Elon\u2019s under heat fo..."
+        },
+        "PDF copy-paste": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "It feels like a strategic distraction move\u060c if I\u2019m being honest\u3002 Interestingly\u060c Elon\u2019s under heat fo..."
+        },
+        "Human paraphrasing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "it feels like a strategic distraction move\u060c if i\u2019m being honest\u3002 interestingly\u060c elon\u2019s under heat fo..."
+        }
+      }
+    },
+    {
+      "sample_name": "Sample_5",
+      "original_text": "I\u2019m not shocked if it\u2019s true\u060c but I am shocked Elon is the one saying it publicly\u3002 As a matter of fa...",
+      "original_watermarks": {
+        "zwsp": true,
+        "arabic_comma": true,
+        "fullwidth_period": true,
+        "total_count": 3
+      },
+      "test_results": {
+        "ASCII-only copy-paste": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "Im not shocked if its true but I am shocked Elon is the one saying it publicly As a matter of fact H..."
+        },
+        "Spell checker simulation": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "I\u2019m not shocked if it\u2019s true, but I am shocked Elon is the one saying it publicly. As a matter of fa..."
+        },
+        "Manual editing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I\u2019m not shocked if it\u2019s true\u060c but I am shocked Elon is the one saying it publicly\u3002 As a matter of fa..."
+        },
+        "Social media posting": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "I\u2019m not shocked if it\u2019s true\u060c but I am shocked Elon is the one saying it publicly\u3002 As a matter of fa..."
+        },
+        "Email client forwarding": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 2
+          },
+          "survival_rate": 0.6666666666666666,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "I\u2019m not shocked if it\u2019s true\u060c but I am shocked Elon is the one saying it publicly\u3002 As a matter of fa..."
+        },
+        "Unicode normalization": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "I\u2019m not shocked if it\u2019s true\u060c but I am shocked Elon is the one saying it publicly\u3002 As a matter of fa..."
+        },
+        "HTML encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I\u2019m not shocked if it\u2019s true\u060c but I am shocked Elon is the one saying it publicly\u3002 As a matter of fa..."
+        },
+        "URL encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I\u2019m not shocked if it\u2019s true\u060c but I am shocked Elon is the one saying it publicly\u3002 As a matter of fa..."
+        },
+        "PDF copy-paste": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I\u2019m not shocked if it\u2019s true\u060c but I am shocked Elon is the one saying it publicly\u3002 As a matter of fa..."
+        },
+        "Human paraphrasing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "i\u2019m not shocked if it\u2019s true\u060c but i am shocked elon is the one saying it publicly\u3002 as a matter of fa..."
+        }
+      }
+    },
+    {
+      "sample_name": "Sample_6",
+      "original_text": "I\u2019ve been seeing flyers and posts about this \u201cNo Kings\u201d protest\u060c and honestly\u060c I\u2019m not sure what to ...",
+      "original_watermarks": {
+        "zwsp": true,
+        "arabic_comma": true,
+        "fullwidth_period": true,
+        "total_count": 3
+      },
+      "test_results": {
+        "ASCII-only copy-paste": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "Ive been seeing flyers and posts about this No Kings protest and honestly Im not sure what to think ..."
+        },
+        "Spell checker simulation": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "I\u2019ve been seeing flyers and posts about this \u201cNo Kings\u201d protest, and honestly, I\u2019m not sure what to ..."
+        },
+        "Manual editing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I\u2019ve been seeing flyers and posts about this \u201cNo Kings\u201d protest\u060c and honestly\u060c I\u2019m not sure what to ..."
+        },
+        "Social media posting": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "I\u2019ve been seeing flyers and posts about this \u201cNo Kings\u201d protest\u060c and honestly\u060c I\u2019m not sure what to ..."
+        },
+        "Email client forwarding": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 2
+          },
+          "survival_rate": 0.6666666666666666,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "I\u2019ve been seeing flyers and posts about this \u201cNo Kings\u201d protest\u060c and honestly\u060c I\u2019m not sure what to ..."
+        },
+        "Unicode normalization": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I\u2019ve been seeing flyers and posts about this \u201cNo Kings\u201d protest\u060c and honestly\u060c I\u2019m not sure what to ..."
+        },
+        "HTML encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I\u2019ve been seeing flyers and posts about this \u201cNo Kings\u201d protest\u060c and honestly\u060c I\u2019m not sure what to ..."
+        },
+        "URL encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I\u2019ve been seeing flyers and posts about this \u201cNo Kings\u201d protest\u060c and honestly\u060c I\u2019m not sure what to ..."
+        },
+        "PDF copy-paste": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I\u2019ve been seeing flyers and posts about this \u201cNo Kings\u201d protest\u060c and honestly\u060c I\u2019m not sure what to ..."
+        },
+        "Human paraphrasing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "i\u2019ve been seeing flyers and posts about this \u201cno kings\u201d protest\u060c and frankly\u060c i\u2019m not sure what to t..."
+        }
+      }
+    },
+    {
+      "sample_name": "Sample_7",
+      "original_text": "\u201cNo Kings\u201d feels like a rallying cry for everyone who\u2019s just sick of being powerless\u3002 As a matter of...",
+      "original_watermarks": {
+        "zwsp": true,
+        "arabic_comma": true,
+        "fullwidth_period": true,
+        "total_count": 3
+      },
+      "test_results": {
+        "ASCII-only copy-paste": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "No Kings feels like a rallying cry for everyone whos just sick of being powerless As a matter of fac..."
+        },
+        "Spell checker simulation": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "\u201cNo Kings\u201d feels like a rallying cry for everyone who\u2019s just sick of being powerless. As a matter of..."
+        },
+        "Manual editing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "\u201cNo Kings\u201d feels like a rallying cry for everyone who\u2019s just sick of being powerless\u3002 As a matter of..."
+        },
+        "Social media posting": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 2
+          },
+          "survival_rate": 0.6666666666666666,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "\u201cNo Kings\u201d feels like a rallying cry for everyone who\u2019s just sick of being powerless\u3002 As a matter of..."
+        },
+        "Email client forwarding": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 2
+          },
+          "survival_rate": 0.6666666666666666,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "\u201cNo Kings\u201d feels like a rallying cry for everyone who\u2019s just sick of being powerless\u3002 As a matter of..."
+        },
+        "Unicode normalization": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "\u201cNo Kings\u201d feels like a rallying cry for everyone who\u2019s just sick of being powerless\u3002 As a matter of..."
+        },
+        "HTML encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "\u201cNo Kings\u201d feels like a rallying cry for everyone who\u2019s just sick of being powerless\u3002 As a matter of..."
+        },
+        "URL encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "\u201cNo Kings\u201d feels like a rallying cry for everyone who\u2019s just sick of being powerless\u3002 As a matter of..."
+        },
+        "PDF copy-paste": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "\u201cNo Kings\u201d feels like a rallying cry for everyone who\u2019s just sick of being powerless\u3002 As a matter of..."
+        },
+        "Human paraphrasing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "\u201cno kings\u201d feels like a rallying cry for everyone who\u2019s just sick of being powerless\u3002 as a matter of..."
+        }
+      }
+    },
+    {
+      "sample_name": "Sample_8",
+      "original_text": "I \u200bactually support the \u201cNo \u200bKings\u201d protest\u060c even if I don\u2019t agree with every angle of it\u3002 It turns ...",
+      "original_watermarks": {
+        "zwsp": true,
+        "arabic_comma": true,
+        "fullwidth_period": true,
+        "total_count": 3
+      },
+      "test_results": {
+        "ASCII-only copy-paste": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "I actually support the No Kings protest even if I dont agree with every angle of it It turns out For..."
+        },
+        "Spell checker simulation": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "I actually support the \u201cNo Kings\u201d protest, even if I don\u2019t agree with every angle of it. It turns ou..."
+        },
+        "Manual editing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I \u200bactually support the \u201cNo \u200bKings\u201d protest\u060c even if I don\u2019t agree with every angle of it\u3002 It turns ..."
+        },
+        "Social media posting": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "I \u200bactually support the \u201cNo \u200bKings\u201d protest\u060c even if I don\u2019t agree with every angle of it\u3002 It turns ..."
+        },
+        "Email client forwarding": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 2
+          },
+          "survival_rate": 0.6666666666666666,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "I actually support the \u201cNo Kings\u201d protest\u060c even if I don\u2019t agree with every angle of it\u3002 It turns ou..."
+        },
+        "Unicode normalization": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I \u200bactually support the \u201cNo \u200bKings\u201d protest\u060c even if I don\u2019t agree with every angle of it\u3002 It turns ..."
+        },
+        "HTML encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I \u200bactually support the \u201cNo \u200bKings\u201d protest\u060c even if I don\u2019t agree with every angle of it\u3002 It turns ..."
+        },
+        "URL encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I \u200bactually support the \u201cNo \u200bKings\u201d protest\u060c even if I don\u2019t agree with every angle of it\u3002 It turns ..."
+        },
+        "PDF copy-paste": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "I \u200bactually support the \u201cNo \u200bKings\u201d protest\u060c even if I don\u2019t agree with every angle of it\u3002 It turns ..."
+        },
+        "Human paraphrasing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "i \u200bin fact support the \u201cno \u200bkings\u201d protest\u060c even if i don\u2019t agree with every angle of it\u3002 it turns o..."
+        }
+      }
+    },
+    {
+      "sample_name": "Sample_9",
+      "original_text": "When \u200bI read that 700 Marines are being sent to LA\u060c my stomach dropped a little\u3002 It turns out\u060c It ju...",
+      "original_watermarks": {
+        "zwsp": true,
+        "arabic_comma": true,
+        "fullwidth_period": true,
+        "total_count": 3
+      },
+      "test_results": {
+        "ASCII-only copy-paste": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "When I read that 700 Marines are being sent to LA my stomach dropped a little It turns out It just f..."
+        },
+        "Spell checker simulation": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "When I read that 700 Marines are being sent to LA, my stomach dropped a little. It turns out, It jus..."
+        },
+        "Manual editing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "When \u200bI read that 700 Marines are being sent to LA\u060c my stomach dropped a little\u3002 It turns out\u060c It ju..."
+        },
+        "Social media posting": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "When \u200bI read that 700 Marines are being sent to LA\u060c my stomach dropped a little\u3002 It turns out\u060c It ju..."
+        },
+        "Email client forwarding": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 2
+          },
+          "survival_rate": 0.6666666666666666,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "When I read that 700 Marines are being sent to LA\u060c my stomach dropped a little\u3002 It turns out\u060c It jus..."
+        },
+        "Unicode normalization": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "When \u200bI read that 700 Marines are being sent to LA\u060c my stomach dropped a little\u3002 It turns out\u060c It ju..."
+        },
+        "HTML encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "When \u200bI read that 700 Marines are being sent to LA\u060c my stomach dropped a little\u3002 It turns out\u060c It ju..."
+        },
+        "URL encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "When \u200bI read that 700 Marines are being sent to LA\u060c my stomach dropped a little\u3002 It turns out\u060c It ju..."
+        },
+        "PDF copy-paste": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "When \u200bI read that 700 Marines are being sent to LA\u060c my stomach dropped a little\u3002 It turns out\u060c It ju..."
+        },
+        "Human paraphrasing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "when \u200bi read that 700 marines are being sent to la\u060c my stomach dropped a little\u3002 it turns out\u060c it ju..."
+        }
+      }
+    },
+    {
+      "sample_name": "Sample_10",
+      "original_text": "Honestly\u060c it\u2019s wild that we\u2019ve reached a point where sending Marines into a major U\u3002S. As a matter o...",
+      "original_watermarks": {
+        "zwsp": true,
+        "arabic_comma": true,
+        "fullwidth_period": true,
+        "total_count": 3
+      },
+      "test_results": {
+        "ASCII-only copy-paste": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "Honestly its wild that weve reached a point where sending Marines into a major US. As a matter of fa..."
+        },
+        "Spell checker simulation": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": false,
+            "fullwidth_period": false,
+            "total_count": 0
+          },
+          "survival_rate": 0.0,
+          "status": "FAIL",
+          "text_changed": true,
+          "modified_text_preview": "Honestly, it\u2019s wild that we\u2019ve reached a point where sending Marines into a major U.S. As a matter o..."
+        },
+        "Manual editing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "Honestly\u060c it\u2019s wild that we\u2019ve reached a point where sending Marines into a major U\u3002S. As a matter o..."
+        },
+        "Social media posting": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "Honestly\u060c it\u2019s wild that we\u2019ve reached a point where sending Marines into a major U\u3002S. As a matter o..."
+        },
+        "Email client forwarding": {
+          "watermarks_detected": {
+            "zwsp": false,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 2
+          },
+          "survival_rate": 0.6666666666666666,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "Honestly\u060c it\u2019s wild that we\u2019ve reached a point where sending Marines into a major U\u3002S. As a matter o..."
+        },
+        "Unicode normalization": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Honestly\u060c it\u2019s wild that we\u2019ve reached a point where sending Marines into a major U\u3002S. As a matter o..."
+        },
+        "HTML encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Honestly\u060c it\u2019s wild that we\u2019ve reached a point where sending Marines into a major U\u3002S. As a matter o..."
+        },
+        "URL encoding roundtrip": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Honestly\u060c it\u2019s wild that we\u2019ve reached a point where sending Marines into a major U\u3002S. As a matter o..."
+        },
+        "PDF copy-paste": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": false,
+          "modified_text_preview": "Honestly\u060c it\u2019s wild that we\u2019ve reached a point where sending Marines into a major U\u3002S. As a matter o..."
+        },
+        "Human paraphrasing": {
+          "watermarks_detected": {
+            "zwsp": true,
+            "arabic_comma": true,
+            "fullwidth_period": true,
+            "total_count": 3
+          },
+          "survival_rate": 1.0,
+          "status": "PASS",
+          "text_changed": true,
+          "modified_text_preview": "frankly\u060c it\u2019s wild that we\u2019ve reached a point where sending marines into a major u\u3002s. as a matter of..."
+        }
+      }
+    }
+  ]
+}

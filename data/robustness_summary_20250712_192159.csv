@@ -1,0 +1,11 @@
+Test_Scenario,Avg_Survival_Rate,Risk_Level,Samples_Tested
+ASCII-only copy-paste,0.0%,Critical,10
+Spell checker simulation,0.0%,Critical,10
+Manual editing,100.0%,Strong,10
+Social media posting,96.7%,Strong,10
+Email client forwarding,66.7%,Moderate,10
+Unicode normalization,100.0%,Strong,10
+HTML encoding roundtrip,100.0%,Strong,10
+URL encoding roundtrip,100.0%,Strong,10
+PDF copy-paste,100.0%,Strong,10
+Human paraphrasing,100.0%,Strong,10
